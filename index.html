@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome!</h1>
+    <form>
+        <label">Account Size</label><br>
+        <input type="text" name="size" placeholder="USD"><br>
+
+        <label">Risk Amount</label><br>
+        <input type="text" name="risk" placeholder="USD"><br>
+
+        <label>Stop Loss Percent</label><br>
+        <input type="text" name="sl"><br>
+
+        <br>
+
+        <p>RESULTS</p>
+        <label>Position Size</label><br>
+        <input type="text" name="pos-size" disabled><br>
+
+        <label>Needed Leverage</label><br>
+        <input type="text" name="leverage" disabled value=""><br>
+    </form>
 </body>
 </html>
