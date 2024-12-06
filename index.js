@@ -6,7 +6,6 @@ results = document.getElementsByName("result");
 position_size_field = results[0];
 leverage_field = results[1];
 
-leverage = 1;
 
 document.getElementById("submit").onclick = function(e){
     e.preventDefault();
@@ -20,7 +19,8 @@ document.getElementById("submit").onclick = function(e){
             leverage = position_size / parseFloat(float_size);
             console.log(leverage);
             console.log(account_size.value);
-
+        }else{
+            leverage = 1;
         }
 
         position_size_field.value = position_size.toFixed(2);
